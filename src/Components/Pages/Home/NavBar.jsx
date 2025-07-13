@@ -2,8 +2,8 @@
 import React from "react";
 
 const NavBar = () => (
-  <nav className="navbar bg-green-500 text-white w-full fixed z-50 shadow-sm ">
-    <div className="container mx-auto px-4 lg:px-24 bg-pink-500 flex justify-between items-center">
+  <nav className="navbar  bg-[#0A0A0A] text-white w-full fixed z-50 shadow-sm ">
+    <div className="container mx-auto px-4 lg:px-24 flex justify-between items-center">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
@@ -56,7 +56,7 @@ const NavBar = () => (
           Shraban Chakma
         </a>
       </div>
-      <div className="navbar-center hidden md:flex bg-blue-500">
+      <div className="navbar-center hidden md:flex ">
         <ul className="menu menu-horizontal px-1">
           <li>
             <a href="#home">Home</a>
