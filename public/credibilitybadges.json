@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ga4",
+    "alt": "Google Analytics 4 logo",
+    "src": "https://i.ibb.co/5h2rghHv/ga4.webp",
+    "label": "GA4"
+  },
+  {
+    "id": "google-ads",
+    "alt": "Google Ads logo",
+    "src": "https://i.ibb.co/hFfZmsQ6/google-ads.webp",
+    "label": "Google Ads"
+  },
+  {
+    "id": "gtm",
+    "alt": "Google Tag Manager logo",
+    "src": "https://i.ibb.co/4Z9WCrKV/gtm.webp",
+    "label": "GTM"
+  },
+  {
+    "id": "shopify",
+    "alt": "Shopify logo",
+    "src": "https://i.ibb.co/pBBmWQcM/shopify.webp",
+    "label": "Shopify"
+  },
+  {
+    "id": "wordpress",
+    "alt": "WordPress logo",
+    "src": "https://i.ibb.co/LXN3t4wL/wordpress.webp",
+    "label": "WordPress"
+  }
+]

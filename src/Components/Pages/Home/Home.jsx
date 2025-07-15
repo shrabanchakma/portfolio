@@ -1,7 +1,8 @@
 import React from "react";
 import HeroSection from "./Herosection";
-import NavBar from "./Navbar";
 import { TrustAndCredibilityBar } from "./TrustAndCredibilityBar";
+import AboutMe from "./AboutMe";
+import NavBar from "./NavBar";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <div className="pt-16">
         <HeroSection />
         <TrustAndCredibilityBar />
+        <AboutMe />
       </div>
     </div>
   );
