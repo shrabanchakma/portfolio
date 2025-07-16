@@ -1,48 +1,100 @@
 import myimage from "../../../../public/me.jpg";
+import { BsDot } from "react-icons/bs";
 import { GiCheckMark } from "react-icons/gi";
 export default function AboutMe() {
   return (
-    <section className="max-h-svh px-4 md:px-12  bg-base-100 border-t border-base-300 w-full flex flex-col md:flex-row items-start justify-between">
-      <div className="w-2/6 bg-yellow-300">
+    <section className="max-h-vh px-4   bg-base-100  w-full lg:w-11/12 mx-auto  flex flex-col md:flex-row items-start justify-between">
+      <div className="w-full md:w-1/3 lg:w-2/6 ">
         {/* skills section */}
-        <img src={myimage} alt="My Image" className="w-11/12" />
+        <img
+          src={myimage}
+          alt="My Image"
+          className="w-full h-[20rem] xsm:h-[25rem] sm:h-[30rem] object-cover md:w-11/12 mx-auto"
+        />
       </div>
-      <div className="w-4/6 bg-green-300 px-10 pt-5 pb-10">
+      <div className="w-full md:w-2/3 lg:w-4/6  px-4 py-4 md:px-1 md:py-1 lg:px-10 lg:pt-5 md:pb-10 ">
         {/* brief intro and image */}
-        <h1 className="text-7xl font-bold">About Me</h1>
-        <div className="divider"></div>
-        <p className="text-lg text-black/75 mb-6">
+        <h1 className="text-xl md:text-4xl lg:text-5xl font-bold">About Me</h1>
+        <div className="divider m-0 md:w-10/12"></div>
+        <p className="text-sm  md:text-lg text-black/75 mb-6 w-full lg:w-10/12">
           I specialize in turning digital ad budgets into measurable business
           results. With deep expertise in Google Ads and web analytics, I help
           businesses launch performance-driven campaigns and track every click,
           view, and conversion with confidence.
         </p>
         {/* what i do best */}
-        <h2 className="text-lg font-bold">What I Do Best</h2>
-        <div className="flex flex-col md:flex-row gap-4 mt-4 ">
+        <h2 className="text-base md:text-lg font-bold flex items-center">
+          <BsDot className="" size={20} />
+          What I Do Best:
+        </h2>
+        <div className="flex flex-col md:flex-row md:gap-4 text-sm md:text-base gap-4 ">
           <div>
             {" "}
-            <ul className="list-none pl-5 text-black/75">
+            <ul className="list-none lg:pl-5 text-black/75">
               <li className="flex items-center gap-2">
                 <GiCheckMark />
                 Google Ads Campaigns
               </li>
-              <li>Conversion-Focused Strategy</li>
-              <li>Ecommerce Tracking</li>
-              <li>Conversion Tracking</li>
-              <li>Campaign Optimization</li>
+              <li className="flex items-center gap-2">
+                <GiCheckMark />
+                Conversion-Focused Strategy
+              </li>
+              <li className="flex items-center gap-2">
+                <GiCheckMark />
+                Ecommerce Tracking
+              </li>
+              <li className="flex items-center gap-2">
+                <GiCheckMark />
+                Conversion Tracking
+              </li>
+              <li className="flex items-center gap-2">
+                <GiCheckMark />
+                Campaign Optimization
+              </li>
             </ul>
           </div>
           <div>
             {" "}
-            <ul className="list-disc pl-5 text-black/75">
-              <li>Remarketing & Audience Segments</li>
-              <li>Server-Side Tracking</li>
-              <li>Custom Dashboards</li>
-              <li>Error Fixing & Debugging</li>
-              <li>Data-Driven Decisions</li>
+            <ul className=" list-disc md:pl-5 text-black/75">
+              <li className="flex items-center gap-2">
+                <GiCheckMark />
+                Remarketing & Audience Segments
+              </li>
+              <li className="flex items-center gap-2">
+                <GiCheckMark />
+                Server-Side Tracking
+              </li>
+              <li className="flex items-center gap-2">
+                <GiCheckMark />
+                Custom Dashboards
+              </li>
+              <li className="flex items-center gap-2">
+                <GiCheckMark />
+                Error Fixing & Debugging
+              </li>
+              <li className="flex items-center gap-2">
+                <GiCheckMark />
+                Data-Driven Decisions
+              </li>
             </ul>
           </div>
+        </div>
+        {/* download cv */}
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-6">
+          <a
+            href="/cv.pdf"
+            download
+            class="btn px-6 py-2 text-white bg-[#000814] hover:bg-[#ffd60a] font-semibold"
+          >
+            📄 Download CV
+          </a>
+
+          <a
+            href="#projects"
+            className="btn bg-[#FEEA3A] text-black hover:bg-[#ffd500]"
+          >
+            See My Work
+          </a>
         </div>
       </div>
     </section>
