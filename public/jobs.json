@@ -1,0 +1,56 @@
+[
+  {
+    "label": "Google Ads",
+    "image": "https://i.ibb.co/4nFX42v2/rocket.png",
+    "title": "Launch Ads That Convert",
+    "description": "ROI-focused Search, Display & Video campaigns with sharp targeting and copy."
+  },
+  {
+    "label": "Tracking Setup",
+    "image": "https://i.ibb.co/4Z9WCrKV/gtm.webp",
+    "title": "Track What Matters",
+    "description": "Browser + server-side setup using GA4, GTM & Meta Pixel across key platforms."
+  },
+  {
+    "label": "Remarketing",
+    "image": "https://i.ibb.co/MKnsHyL/remarketing.png",
+    "title": "Re-Engage High-Intent Users",
+    "description": "Custom audiences that bring users back and boost conversions."
+  },
+  {
+    "label": "Ad Copy & Creative",
+    "image": "https://i.ibb.co/23bsnWxj/copywriting.png",
+    "title": "Write Ads That Speak",
+    "description": "AI-powered, audience-tailored messaging and responsive visual design."
+  },
+  {
+    "label": "Meta Pixel",
+    "image": "https://i.ibb.co/kgtH0fqn/code.png",
+    "title": "Smarter Meta Tracking",
+    "description": "Facebook Conversion API for reliable cross-platform tracking."
+  },
+  {
+    "label": "Ecommerce Analytics",
+    "image": "https://i.ibb.co/s9mnG1qw/shopping-cart.png",
+    "title": "Follow Every Sale",
+    "description": "Track views, carts, checkouts & purchases in Shopify + WooCommerce."
+  },
+  {
+    "label": "GA4 & GTM Setup",
+    "image": "https://i.ibb.co/5h2rghHv/ga4.webp",
+    "title": "Analytics That Don’t Break",
+    "description": "Reliable events, real-time validation & error-proof config for clear insights."
+  },
+  {
+    "label": "Platform Integration",
+    "image": "https://i.ibb.co/gLqfTD98/partnership.png",
+    "title": "Connect Your Tools",
+    "description": "Seamless data flow between ads, analytics, Meta Pixel, Shopify & WordPress."
+  },
+  {
+    "label": "Audit & Fixes",
+    "image": "https://i.ibb.co/3596ynF5/wrench.png",
+    "title": "Clean Up Tracking & Strategy",
+    "description": "Debug tags, fix conversions & align data with business goals."
+  }
+]

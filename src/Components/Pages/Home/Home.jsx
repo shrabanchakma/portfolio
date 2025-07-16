@@ -3,6 +3,7 @@ import HeroSection from "./Herosection";
 import { TrustAndCredibilityBar } from "./TrustAndCredibilityBar";
 import AboutMe from "./AboutMe";
 import NavBar from "./NavBar";
+import JobSection from "./JobSection";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <div className="pt-16">
         <HeroSection />
         <TrustAndCredibilityBar />
+        <JobSection />
         <AboutMe />
       </div>
     </div>

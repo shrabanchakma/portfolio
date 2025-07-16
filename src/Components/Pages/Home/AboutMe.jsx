@@ -1,11 +1,11 @@
 import myimage from "../../../../public/me.jpg";
 import { BsDot } from "react-icons/bs";
 import { GiCheckMark } from "react-icons/gi";
-export default function AboutMe() {
+const AboutMe = () => {
   return (
-    <section className="max-h-vh px-4   bg-base-100  w-full lg:w-11/12 mx-auto  flex flex-col md:flex-row items-start justify-between">
+    <section className="max-h-vh px-4   bg-base-100  w-full lg:w-10/12 mx-auto  flex flex-col md:flex-row items-start justify-between lg:gap-20">
       <div className="w-full md:w-1/3 lg:w-2/6 ">
-        {/* skills section */}
+        {/* image*/}
         <img
           src={myimage}
           alt="My Image"
@@ -13,7 +13,7 @@ export default function AboutMe() {
         />
       </div>
       <div className="w-full md:w-2/3 lg:w-4/6  px-4 py-4 md:px-1 md:py-1 lg:px-10 lg:pt-5 md:pb-10 ">
-        {/* brief intro and image */}
+        {/* intro*/}
         <h1 className="text-xl md:text-4xl lg:text-5xl font-bold">About Me</h1>
         <div className="divider m-0 md:w-10/12"></div>
         <p className="text-sm  md:text-lg text-black/75 mb-6 w-full lg:w-10/12">
@@ -80,11 +80,11 @@ export default function AboutMe() {
           </div>
         </div>
         {/* download cv */}
-        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-6">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-6">
           <a
             href="/cv.pdf"
             download
-            class="btn px-6 py-2 text-white bg-[#000814] hover:bg-[#ffd60a] font-semibold"
+            className="btn px-6 py-2 text-white bg-[#000814] hover:bg-[#ffd60a] font-semibold"
           >
             📄 Download CV
           </a>
@@ -99,4 +99,5 @@ export default function AboutMe() {
       </div>
     </section>
   );
-}
+};
+export default AboutMe;
