@@ -1,9 +1,13 @@
+import { JackInTheBox } from "react-awesome-reveal";
 import myimage from "../../../../public/me.jpg";
 import { BsDot } from "react-icons/bs";
 import { GiCheckMark } from "react-icons/gi";
 const AboutMe = () => {
   return (
-    <section className="max-h-vh px-4   bg-base-100  w-full lg:w-10/12 mx-auto  flex flex-col md:flex-row items-start justify-between lg:gap-20">
+    <section
+      data-aos="zoom-in"
+      className="max-h-vh px-4   bg-base-100  w-full lg:w-10/12 mx-auto  flex flex-col md:flex-row items-start justify-between lg:gap-20"
+    >
       <div className="w-full md:w-1/3 lg:w-2/6 ">
         {/* image*/}
         <img
@@ -30,53 +34,58 @@ const AboutMe = () => {
         <div className="flex flex-col md:flex-row md:gap-4 text-sm md:text-base gap-4 ">
           <div>
             {" "}
-            <ul className="list-none lg:pl-5 text-black/75">
-              <li className="flex items-center gap-2">
-                <GiCheckMark />
-                Google Ads Campaigns
-              </li>
-              <li className="flex items-center gap-2">
-                <GiCheckMark />
-                Conversion-Focused Strategy
-              </li>
-              <li className="flex items-center gap-2">
-                <GiCheckMark />
-                Ecommerce Tracking
-              </li>
-              <li className="flex items-center gap-2">
-                <GiCheckMark />
-                Conversion Tracking
-              </li>
-              <li className="flex items-center gap-2">
-                <GiCheckMark />
-                Campaign Optimization
-              </li>
-            </ul>
+            <JackInTheBox>
+              {" "}
+              <ul className="list-none lg:pl-5 text-black/75">
+                <li className="flex items-center gap-2">
+                  <GiCheckMark />
+                  Google Ads Campaigns
+                </li>
+                <li className="flex items-center gap-2">
+                  <GiCheckMark />
+                  Conversion-Focused Strategy
+                </li>
+                <li className="flex items-center gap-2">
+                  <GiCheckMark />
+                  Ecommerce Tracking
+                </li>
+                <li className="flex items-center gap-2">
+                  <GiCheckMark />
+                  Conversion Tracking
+                </li>
+                <li className="flex items-center gap-2">
+                  <GiCheckMark />
+                  Campaign Optimization
+                </li>
+              </ul>
+            </JackInTheBox>
           </div>
           <div>
             {" "}
-            <ul className=" list-disc md:pl-5 text-black/75">
-              <li className="flex items-center gap-2">
-                <GiCheckMark />
-                Remarketing & Audience Segments
-              </li>
-              <li className="flex items-center gap-2">
-                <GiCheckMark />
-                Server-Side Tracking
-              </li>
-              <li className="flex items-center gap-2">
-                <GiCheckMark />
-                Custom Dashboards
-              </li>
-              <li className="flex items-center gap-2">
-                <GiCheckMark />
-                Error Fixing & Debugging
-              </li>
-              <li className="flex items-center gap-2">
-                <GiCheckMark />
-                Data-Driven Decisions
-              </li>
-            </ul>
+            <JackInTheBox>
+              <ul className=" list-disc md:pl-5 text-black/75">
+                <li className="flex items-center gap-2">
+                  <GiCheckMark />
+                  Remarketing & Audience Segments
+                </li>
+                <li className="flex items-center gap-2">
+                  <GiCheckMark />
+                  Server-Side Tracking
+                </li>
+                <li className="flex items-center gap-2">
+                  <GiCheckMark />
+                  Custom Dashboards
+                </li>
+                <li className="flex items-center gap-2">
+                  <GiCheckMark />
+                  Error Fixing & Debugging
+                </li>
+                <li className="flex items-center gap-2">
+                  <GiCheckMark />
+                  Data-Driven Decisions
+                </li>
+              </ul>
+            </JackInTheBox>
           </div>
         </div>
         {/* download cv */}

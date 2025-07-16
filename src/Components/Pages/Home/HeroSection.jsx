@@ -1,13 +1,23 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import AOS from "aos";
+import { ReactTyped } from "react-typed";
 const HeroSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <section className="bg-[#0A0A0A] text-white py-16 px-4 sm:px-6 md:px-12 lg:px-24">
+    <section
+      data-aos="zoom-in"
+      className="bg-[#0A0A0A] text-white py-16 px-4 sm:px-6 md:px-12 lg:px-24"
+    >
       <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
         {/* Text Content */}
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-[#FEEA3A]">
-            Unlock Data-Driven Growth with Precision Analytics
+            <ReactTyped
+              strings={["Unlock Data-Driven Growth with Precision Analytics"]}
+              typeSpeed={20}
+            />
           </h1>
           <p className="mt-4 text-base sm:text-lg text-[#F2F2F2]">
             End-to-end GA4, GTM & Server-Side Tracking that boosts conversions —

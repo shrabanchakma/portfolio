@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import jobs from "../../../../public/jobs.json";
+import Aos from "aos";
 function PrevArrow({ className, style, onClick }) {
   return (
     <div
@@ -32,6 +33,9 @@ function NextArrow({ className, style, onClick }) {
 }
 
 const JobSection = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   const settings = {
     dots: true,
     infinite: true,
@@ -56,7 +60,10 @@ const JobSection = () => {
   };
 
   return (
-    <section className="py-16 px-4 md:px-12 bg-base-200  text-gray-900">
+    <section
+      data-aos="zoom-in"
+      className="py-16 px-4 md:px-12 bg-base-200  text-gray-900"
+    >
       <h2 className="text-2xl md:text-3xl font-bold mb-10 text-center">
         🚀 Skills in Action
       </h2>
