@@ -1,19 +1,26 @@
+import { useState } from "react";
 import { JackInTheBox } from "react-awesome-reveal";
-import myimage from "../../../../public/me.jpg";
 import { BsDot } from "react-icons/bs";
 import { GiCheckMark } from "react-icons/gi";
 const AboutMe = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
   return (
     <section
       data-aos="zoom-in"
       className="max-h-vh px-4   bg-base-100  w-full lg:w-10/12 mx-auto  flex flex-col md:flex-row items-start justify-between lg:gap-20"
     >
       <div className="w-full md:w-1/3 lg:w-2/6 ">
-        {/* image*/}
+        {/* my image*/}
+        {!isLoaded && (
+          <div className="skeleton w-full h-[20rem] xsm:h-[25rem] sm:h-[30rem]  md:w-11/12 mx-auto rounded-lg"></div>
+        )}
         <img
-          src={myimage}
+          src="https://i.ibb.co/s9H88NJn/me-cropped-2.jpg"
           alt="My Image"
-          className="w-full h-[20rem] xsm:h-[25rem] sm:h-[30rem] object-cover md:w-11/12 mx-auto"
+          className={`w-full h-[20rem] xsm:h-[25rem] sm:h-[30rem] object-cover md:w-11/12 mx-auto ${
+            isLoaded ? "opacity-100" : "opacity-0"
+          }`}
+          onLoad={() => setIsLoaded(true)}
         />
       </div>
       <div className="w-full md:w-2/3 lg:w-4/6  px-4 py-4 md:px-1 md:py-1 lg:px-10 lg:pt-5 md:pb-10 ">

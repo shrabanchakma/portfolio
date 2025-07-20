@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import jobs from "../../../../public/jobs.json";
 import Aos from "aos";
@@ -33,6 +33,7 @@ function NextArrow({ className, style, onClick }) {
 }
 
 const JobSection = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
     Aos.init();
   }, []);
@@ -71,10 +72,16 @@ const JobSection = () => {
         {jobs.map((job, index) => (
           <div key={index} className="px-2 ">
             <div className="bg-white rounded-lg  p-6 text-start h-full">
+              {!isLoaded && (
+                <div className="skeleton rounded-lg h-14 w-14 mb-4" />
+              )}
               <img
                 src={job.image}
                 alt={job.label}
-                className="h-14 w-14 object-contain mb-4 "
+                className={`w-14 h-14 mb-4 rounded-lg ${
+                  isLoaded ? "block" : "hidden"
+                }`}
+                onLoad={() => setIsLoaded(true)}
               />
               <h3 className="text-lg font-semibold mb-2">{job.title}</h3>
               <p className="text-sm text-gray-700">{job.description}</p>

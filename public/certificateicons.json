@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "icon": "https://i.ibb.co/fYXxgNSB/Facebook-Skillupre.png",
+    "certificate": "https://i.ibb.co/0yg2vnfr/Web-Analytics-Course-Certificate.jpg",
+    "title": "AI-Driven Meta Ads Mastery by",
+    "issuer": "Skilluper"
+  },
+  {
+    "id": 2,
+    "icon": "https://i.ibb.co/ynxt3H8g/Google-Ads-Skilluper.png",
+    "certificate": "https://i.ibb.co/0yg2vnfr/Web-Analytics-Course-Certificate.jpg",
+    "title": "AI-Driven Google Ads Mastery",
+    "issuer": "Skilluper"
+  },
+  {
+    "id": 3,
+    "icon": "https://i.ibb.co/1t552Wjr/google-search.jpg",
+    "certificate": "https://i.ibb.co/0yg2vnfr/Web-Analytics-Course-Certificate.jpg",
+    "title": "Google Search Ads by Google Skillshop",
+    "issuer": "Google Skillshop"
+  },
+  {
+    "id": 4,
+    "icon": "https://i.ibb.co/k6rY2NZc/google-conversion-optimization.jpg",
+    "certificate": "https://i.ibb.co/0yg2vnfr/Web-Analytics-Course-Certificate.jpg",
+    "title": "Google Ads Conversion Optimization by Google Skillshop",
+    "issuer": "Google Skillshop"
+  },
+  {
+    "id": 5,
+    "icon": "https://i.ibb.co/qMsZDCG0/google-analytics.jpg",
+    "certificate": "https://i.ibb.co/0yg2vnfr/Web-Analytics-Course-Certificate.jpg",
+    "title": "Google Analytics 4 + GTM by Google Skillshop",
+    "issuer": "Google Skillshop"
+  },
+  {
+    "id": 6,
+    "icon": "https://i.ibb.co/ymxnbJnL/Web-Analytics.png",
+    "certificate": "https://i.ibb.co/0yg2vnfr/Web-Analytics-Course-Certificate.jpg",
+    "title": "Web Analytics Mastery with Server-Side Tracking",
+    "issuer": "Skilluper"
+  }
+]

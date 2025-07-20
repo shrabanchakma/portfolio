@@ -2,8 +2,8 @@
 import React from "react";
 
 const NavBar = () => (
-  <nav className="navbar px-4 lg:px-0 bg-[#0A0A0A] text-white w-full fixed z-50 shadow-sm">
-    <div className="container mx-auto flex justify-between items-center ">
+  <nav className="navbar px-4 lg:px-0 bg-[#0A0A0A] text-white fixed z-50 shadow-sm w-full">
+    <div className="mx-auto flex justify-between items-center w-11/12 lg:w-10/12 xl:w-8/12 ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
