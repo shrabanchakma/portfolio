@@ -4,7 +4,10 @@ import certificates from "../../../../public/certificateicons";
 
 const CertificateTrustWall = () => {
   return (
-    <section className="py-12 px-4 md:px-12 bg-[#000204] mx-auto flex flex-col items-center">
+    <section
+      // data-aos="zoom-out"
+      className="py-12 px-4 md:px-12 bg-[#000204] mx-auto flex flex-col items-center"
+    >
       <div className="text-center mb-8 w-10/12 ">
         <h2 className="text-3xl font-bold text-[#005fb8] mb-2">
           Certified by Industry Leaders

@@ -1,12 +1,9 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
+import { Bounce } from "react-awesome-reveal";
 import { ReactTyped } from "react-typed";
 const HeroSection = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   return (
     <section
+      id="home"
       data-aos="zoom-in"
       className="bg-[#0A0A0A] text-white py-16 px-4 sm:px-6 md:px-12 lg:px-24"
     >
@@ -24,12 +21,14 @@ const HeroSection = () => {
             no more missing clicks.
           </p>
           <div className="mt-6">
-            <a
-              href="#projects"
-              className="inline-block bg-[#FEEA3A] text-black font-semibold px-6 py-3 rounded-md hover:bg-[#ffd500] transition duration-300"
-            >
-              See My Work
-            </a>
+            <Bounce>
+              <a
+                href="#projects"
+                className="inline-block bg-[#FEEA3A] text-black font-semibold px-6 py-3 rounded-md hover:bg-[#ffd500] transition duration-300"
+              >
+                See My Work
+              </a>
+            </Bounce>
           </div>
         </div>
 

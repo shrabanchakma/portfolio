@@ -1,5 +1,6 @@
 // NavBar.jsx
 import React from "react";
+import { Bounce } from "react-awesome-reveal";
 
 const NavBar = () => (
   <nav className="navbar px-4 lg:px-0 bg-[#0A0A0A] text-white fixed z-50 shadow-sm w-full">
@@ -76,12 +77,15 @@ const NavBar = () => (
         </ul>
       </div>
       <div className="hidden xsm:flex xsm:items-end navbar-end">
-        <a
-          href="#projects"
-          className="btn bg-[#FEEA3A] text-black hover:bg-[#ffd500]"
-        >
-          See My Work
-        </a>
+        <Bounce>
+          {" "}
+          <a
+            href="#projects"
+            className="btn bg-[#FEEA3A] text-black hover:bg-[#ffd500]"
+          >
+            See My Work
+          </a>
+        </Bounce>
       </div>
     </div>
   </nav>

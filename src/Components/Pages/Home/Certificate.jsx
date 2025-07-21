@@ -1,16 +1,22 @@
-import React from "react";
-
+import React, { useState } from "react";
+import PropTypes from "prop-types";
 const Certificate = ({ cert }) => {
+  const [isLoaded, setIsLoaded] = useState(false);
   return (
     <div
       className="relative h-32 w-32 group cursor-pointer overflow-hidden rounded-lg shadow-sm"
       onClick={() => document.getElementById(`my_modal_${cert.id}`).showModal()}
     >
+      {/* Loading Skeleton */}
+      {!isLoaded && <div className="skeleton w-full h-full rounded-lg"></div>}
       {/* Certificate Image */}
       <img
         src={cert.icon}
         alt={cert.title}
-        className="h-full w-full object-cover"
+        className={`h-full w-full object-cover ${
+          isLoaded ? "opacity-100" : "opacity-0"
+        }`}
+        onLoad={() => setIsLoaded(true)}
       />
 
       {/* Slide-Up Badge */}
@@ -45,3 +51,6 @@ const Certificate = ({ cert }) => {
 };
 
 export default Certificate;
+Certificate.propTypes = {
+  cert: PropTypes.object,
+};
