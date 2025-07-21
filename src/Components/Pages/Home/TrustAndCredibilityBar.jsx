@@ -1,13 +1,11 @@
-import { useEffect } from "react";
 import credibilitybadges from "../../../../public/credibilitybadges.json";
 import { Badge } from "./Badge";
-import Aos from "aos";
 
 export const TrustAndCredibilityBar = () => {
   return (
     <section
       data-aos="zoom-in"
-      className="bg-neutral-100 py-8 px-4 md:px-12 text-center border-t border-base-300"
+      className="bg-neutral-100 py-8 px-4 md:px-12 text-center border-t border-base-300 "
     >
       <h2 className="text-xl font-semibold mb-4 text-[#000814]">
         Trusted Tools. Proven Results.

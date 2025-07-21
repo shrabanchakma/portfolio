@@ -7,23 +7,23 @@ import JobSection from "./JobSection";
 import CertificateTrustWall from "./CertificateTrustWall";
 import Aos from "aos";
 import Footer from "./Footer";
+import ProjectSection from "./ProjectSection";
 
 const Home = () => {
   useEffect(() => {
     Aos.init();
   }, []);
   return (
-    <div className="w-full">
-      <NavBar />
+    <>
       <div className="pt-16">
         <HeroSection />
         <TrustAndCredibilityBar />
         <JobSection />
         <AboutMe />
         <CertificateTrustWall />
+        <ProjectSection />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 };
 

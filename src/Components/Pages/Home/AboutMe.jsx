@@ -15,7 +15,7 @@ const AboutMe = () => {
     <section
       id="about"
       data-aos="zoom-in"
-      className="w-full bg-neutral-100 scroll-mt-24 py-10"
+      className="w-full bg-neutral-100 scroll-mt-24 py-10 "
     >
       <div className="w-full lg:w-10/12 mx-auto flex flex-col md:flex-row items-start justify-between gap-6">
         {/* Left: Image Section */}
