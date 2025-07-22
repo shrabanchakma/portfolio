@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Facebook Conversion API Setup",
+    "image": "https://i.ibb.co/1fkyvpTM/project-test.png",
+    "description": "Implemented Facebook Conversion API (CAPI) with both browser-side and server-side tracking on WordPress and Shopify. Ensured event deduplication, improved attribution accuracy, and optimized data flow for better ad performance.",
+    "link": "/projects/1",
+
+    "meta": {
+      "tools": ["Facebook CAPI", "GTM Server", "Shopify", "WordPress"],
+      "outcome": [
+        "+30% higher event match rate",
+        "+25% ROAS lift",
+        "Reduced tracking inconsistencies by 85%"
+      ],
+      "industry": "Ecommerce – Beauty & Wellness"
+    },
+
+    "sections": [
+      {
+        "title": "Server-Side Tracking with GTM Server + Meta Pixel",
+        "image": "https://i.ibb.co/1fkyvpTM/project-test.png",
+        "bullets": [
+          "Built a GTM Server container hosted via Google Cloud for robust reliability",
+          "Configured Meta Pixel events with deduplication logic using `event_id` for browser + server sync",
+          "Created custom triggers to fire purchase, view content, and add-to-cart across both WordPress and Shopify",
+          "Verified event delivery using Meta Events Manager — saw immediate jump in matching precision"
+        ]
+      },
+      {
+        "title": "Browser-Server Signal Blending for Accurate Attribution",
+        "image": "https://i.ibb.co.com/0yg2vnfr/Web-Analytics-Course-Certificate.jpg",
+        "bullets": [
+          "Integrated browser-side GTM tags with Shopify checkout and WooCommerce forms",
+          "Used fallback logic to fire server-only events when browser fails due to ad blockers",
+          "Blended client & server events to feed Meta with complete visibility on user actions",
+          "Enabled advanced remarketing by preserving tracking across redirects and slow-loading pages"
+        ]
+      }
+    ]
+  }
+]

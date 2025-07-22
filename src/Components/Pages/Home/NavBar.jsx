@@ -1,6 +1,7 @@
 // NavBar.jsx
 import React from "react";
 import { Bounce } from "react-awesome-reveal";
+import { NavLink } from "react-router";
 
 const NavBar = () => (
   <nav className="navbar px-4 lg:px-0 bg-[#0A0A0A] text-white fixed z-50 shadow-sm w-full">
@@ -29,7 +30,7 @@ const NavBar = () => (
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-black"
           >
             <li>
-              <a href="#home">Home</a>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
               <a href="#about">About Me</a>
@@ -60,7 +61,7 @@ const NavBar = () => (
       <div className="navbar-center hidden md:block ">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a href="#home">Home</a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
             <a href="#about">About Me</a>
