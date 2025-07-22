@@ -6,10 +6,10 @@ const CertificateTrustWall = () => {
   return (
     <section
       // data-aos="zoom-out"
-      className="py-12 px-4 md:px-12 bg-[#000204] mx-auto flex flex-col items-center"
+      className="py-12 px-4 md:px-12 bg-[#001d3d] mx-auto flex flex-col items-center"
     >
       <div className="text-center mb-8 w-10/12 ">
-        <h2 className="text-3xl font-bold text-[#005fb8] mb-2">
+        <h2 className="text-3xl font-bold text-white mb-2">
           Certified by Industry Leaders
         </h2>
         <p className=" text-base-100 text-sm">

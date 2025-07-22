@@ -5,12 +5,12 @@ export const TrustAndCredibilityBar = () => {
   return (
     <section
       data-aos="zoom-in"
-      className="bg-neutral-100 py-8 px-4 md:px-12 text-center border-t border-base-300 "
+      className="bg-[#001d3d] py-8 px-4 md:px-12 text-center border-t border-base-300 shadow-lg "
     >
-      <h2 className="text-xl font-semibold mb-4 text-[#000814]">
+      <h2 className="text-xl font-semibold mb-4 text-white">
         Trusted Tools. Proven Results.
       </h2>
-      <p className="text-sm md:text-base mb-6 text-black/75">
+      <p className="text-sm md:text-base mb-6 text-white">
         Specialized in tools that power data-driven growth and seamless digital
         experiences.
       </p>

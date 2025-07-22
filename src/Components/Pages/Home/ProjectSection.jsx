@@ -3,7 +3,7 @@ import { SingleProject } from "./SingleProject";
 
 const ProjectSection = () => {
   return (
-    <section id="projects" className="py-20 bg-base-100 w-full">
+    <section id="projects" className="py-20  w-full">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-neutral">Projects</h2>
         <p className="text-gray-500 mt-2">

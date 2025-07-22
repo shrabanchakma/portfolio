@@ -58,17 +58,14 @@ const JobSection = () => {
   };
 
   return (
-    <section
-      data-aos="zoom-in"
-      className="py-16 px-4 md:px-12 bg-[#000204]   text-white"
-    >
-      <h2 className="text-2xl md:text-3xl font-bold mb-10 text-center text-[#005fb8]">
+    <section data-aos="zoom-in" className="py-16 px-4 md:px-12 ">
+      <h2 className="text-2xl md:text-3xl font-bold mb-10 text-center text-[#000814]">
         🚀 Skills in Action
       </h2>
       <Slider {...settings}>
         {jobs.map((job, index) => (
           <div key={index} className="px-2 cursor-pointer">
-            <div className="bg-base-200 rounded-lg  p-6 text-start h-full">
+            <div className="bg-[#F3F4F6] rounded-lg  p-6 text-start h-full">
               {!isLoaded && (
                 <div className="skeleton rounded-lg h-14 w-14 mb-4" />
               )}

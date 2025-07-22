@@ -10,3 +10,9 @@
   line-height: 1.5;
   font-weight: 400;
 }
+.pattern_bg {
+  background-color: #ffffff;
+  /* opacity: 0.8; */
+  background-image: radial-gradient(#8b8b8b 0.5px, #ffffff 0.5px);
+  background-size: 10px 10px;
+}

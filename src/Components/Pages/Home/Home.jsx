@@ -15,7 +15,7 @@ const Home = () => {
   }, []);
   return (
     <>
-      <div className="pt-16">
+      <div className=" pattern_bg">
         <HeroSection />
         <TrustAndCredibilityBar />
         <JobSection />

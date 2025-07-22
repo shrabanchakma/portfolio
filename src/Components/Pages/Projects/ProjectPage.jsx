@@ -2,7 +2,6 @@ import { useParams } from "react-router";
 import projects from "../../../../public/Projects.json"; // move to src if possible
 import Lightbox from "yet-another-react-lightbox";
 import { useState } from "react";
-
 export const ProjectPage = () => {
   const { projectId } = useParams();
   const [openLightbox, setOpenLightbox] = useState(false);
@@ -27,9 +26,9 @@ export const ProjectPage = () => {
   const { name, image, description, meta, sections } = project;
 
   return (
-    <div className="pt-36 pb-32 ">
+    <div className="pt-36 pb-32">
       {/* Hero Section */}
-      <section className="max-w-6xl mx-auto px-4 mb-16">
+      <section className="max-w-6xl mx-auto px-4 mb-16 pattern_bg">
         <div className="flex flex-col md:flex-row gap-10 items-center">
           {/* Text block */}
           <div className="md:w-1/2 space-y-4 text-center md:text-left">
@@ -55,7 +54,7 @@ export const ProjectPage = () => {
       </section>
 
       {/* Metadata */}
-      <section className="max-w-6xl mx-auto px-4 mb-20 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+      <section className="max-w-6xl mx-auto px-4 mb-20 grid grid-cols-1 md:grid-cols-3 gap-6 text-center ">
         <div className=" py-6 rounded-lg shadow-md">
           <p className="text-lg font-bold text-[#3C65FF]">Category</p>
           <p className=" font-semibold text-sm text-gray-500">

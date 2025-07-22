@@ -1,21 +1,18 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Aos from "aos";
 import { JackInTheBox } from "react-awesome-reveal";
 import { BsDot } from "react-icons/bs";
 import { GiCheckMark } from "react-icons/gi";
+import { HashLink } from "react-router-hash-link";
 
 const AboutMe = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
-  useEffect(() => {
-    Aos.init({ duration: 600 });
-  }, []);
-
   return (
     <section
       id="about"
-      data-aos="zoom-in"
-      className="w-full bg-neutral-100 scroll-mt-24 py-10 "
+      // data-aos="zoom-in"
+      className=" bg-[#F3F4F6] scroll-mt-20  py-10 "
     >
       <div className="w-full lg:w-10/12 mx-auto flex flex-col md:flex-row items-start justify-between gap-6">
         {/* Left: Image Section */}
@@ -95,12 +92,13 @@ const AboutMe = () => {
             >
               📄 Download CV
             </a>
-            <a
-              href="#projects"
-              className="btn bg-[#FEEA3A] text-black hover:bg-[#ffd500]"
+            <HashLink
+              to={"#projects"}
+              smooth
+              className="btn bg-[#ffd60a] text-[#001d3d] hover:bg-[#ffc300] outline-2 outline-offset-3 outline-[#003566] hover:outline-[#003566] active:outline-offset-4  px-6 py-3 rounded-md transition duration-300"
             >
               See My Work
-            </a>
+            </HashLink>
           </div>
         </div>
       </div>
