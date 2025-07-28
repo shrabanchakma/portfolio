@@ -28,7 +28,6 @@ export const SingleProject = ({ project }) => {
   return (
     <div
       key={project.id}
-      data-aos="zoom-in"
       className="flex flex-col lg:flex-row gap-8 items-center w-full"
     >
       {/* Left image block */}
