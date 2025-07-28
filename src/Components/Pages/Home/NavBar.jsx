@@ -53,12 +53,12 @@ const NavBar = () => (
             </li>
           </ul>
         </div>
-        <a
-          href="#home"
+        <NavLink
+          to="/"
           className="btn btn-ghost hidden xsm:flex md:text-lg lg:text-2xl lg:font-bold"
         >
           Shraban Chakma
-        </a>
+        </NavLink>
       </div>
       <div className="navbar-center xsm:hidden">
         <a href="#home" className="btn btn-ghost md:text-lg lg:text-xl">

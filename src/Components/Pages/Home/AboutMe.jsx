@@ -88,7 +88,7 @@ const AboutMe = () => {
             <a
               href="/cv.pdf"
               download
-              className="btn px-6 py-2 text-white bg-[#000814] hover:bg-[#ffd60a] font-semibold"
+              className="btn px-6 py-2 text-white bg-blue-900 hover:bg-blue-800 font-semibold"
             >
               📄 Download CV
             </a>

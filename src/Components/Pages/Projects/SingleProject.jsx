@@ -1,20 +1,32 @@
 import PropTypes from "prop-types";
+import { useState } from "react";
 import { Link } from "react-router";
 
 export const SingleProject = ({ project }) => {
+  const [isLoaded, setIsLoaded] = useState(false);
   return (
     <div
       key={project.id}
       className="flex flex-col lg:flex-row gap-8 items-center w-full"
     >
       {/* Left image block */}
-      <div className="bg-yellow-400 rounded-xl p-6 flex justify-center shadow-md w-full md:w-1/2 h-full">
+      <Link
+        to={project.link}
+        className="group bg-yellow-400 rounded-xl p-6 flex justify-center shadow-md w-full md:w-1/2 h-full cursor-pointer"
+      >
+        {/* Loading Skeleton */}
+        {!isLoaded && (
+          <div className="skeleton w-full max-w-md rounded-xl drop-shadow-lg "></div>
+        )}
         <img
           src={project.image}
           alt={project.name}
-          className="w-full max-w-md rounded-xl drop-shadow-lg"
+          className={`w-full max-w-md rounded-xl drop-shadow-lg group-hover:scale-105 transition-transform duration-300  ${
+            isLoaded ? "opacity-100" : "opacity-0 hidden"
+          }`}
+          onLoad={() => setIsLoaded(true)}
         />
-      </div>
+      </Link>
 
       {/* Right content block */}
       <div className="bg-white rounded-xl shadow-md p-8 relative border border-gray-100 w-full md:w-1/2 h-full">

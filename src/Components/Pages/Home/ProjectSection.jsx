@@ -1,5 +1,5 @@
 import projects from "../../../../public/Projects.json";
-import { SingleProject } from "./SingleProject";
+import { SingleProject } from "../Projects/SingleProject";
 
 const ProjectSection = () => {
   return (
@@ -12,9 +12,17 @@ const ProjectSection = () => {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 gap-8 items-stretch">
-        {projects.map((project) => (
+        {projects.slice(0, 3).map((project) => (
           <SingleProject key={project.id} project={project} />
         ))}
+      </div>
+      <div className="text-center mt-8">
+        <a
+          href="/projects"
+          className="text-violet-600 underline cursor-pointer font-medium text-lg active:text-violet-700 hover:text-violet-800 transition"
+        >
+          View All Projects
+        </a>
       </div>
     </section>
   );
