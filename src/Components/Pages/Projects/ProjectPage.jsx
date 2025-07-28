@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import projects from "../../../../public/Projects.json"; // move to src if possible
 import Lightbox from "yet-another-react-lightbox";
 import { useState } from "react";
@@ -155,12 +155,12 @@ export const ProjectPage = () => {
           >
             Start a Project
           </a>
-          <a
-            href="/#projects"
+          <Link
+            to="/projects"
             className="btn btn-outline border-yellow-400 text-yellow-600 hover:bg-yellow-400 hover:text-black rounded-lg"
           >
             Back to Projects
-          </a>
+          </Link>
         </div>
       </section>
     </div>
