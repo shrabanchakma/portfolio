@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router";
 import projects from "../../../../public/Projects.json"; // move to src if possible
 import Lightbox from "yet-another-react-lightbox";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 export const ProjectPage = () => {
   const { projectId } = useParams();
   const [openLightbox, setOpenLightbox] = useState(false);
@@ -15,6 +15,12 @@ export const ProjectPage = () => {
     setOpenLightbox(true);
     setCurrentSlide(idx);
   }
+  const { name, image, description, meta, sections } = project;
+
+  useEffect(() => {
+    document.title = `Project | ${name}`;
+  }, [project, name]);
+
   if (!project) {
     return (
       <div className="h-screen flex items-center justify-center text-red-600 text-xl">
@@ -22,8 +28,6 @@ export const ProjectPage = () => {
       </div>
     );
   }
-
-  const { name, image, description, meta, sections } = project;
 
   return (
     <div className="pt-36 pb-32">

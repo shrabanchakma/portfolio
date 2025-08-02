@@ -23,6 +23,28 @@ const bgColors = [
   "bg-neutral-300", // gentle gray-beige
   "bg-stone-300", // warm muted tone
 ];
+const textColors = [
+  "text-rose-400", // soft red-pink
+  "text-amber-300", // warm golden
+  "text-teal-300", // gentle aqua
+  "text-lime-300", // soft citrus green
+  "text-sky-300", // clear sky blue
+  "text-violet-300", // smooth purple
+  "text-pink-300", // playful blush
+  "text-orange-300", // mellow orange
+  "text-cyan-300", // cool light teal
+  "text-emerald-300", // peaceful green
+  "text-indigo-300", // pastel indigo
+  "text-yellow-400", // warm sunshine
+  "text-purple-300", // creative, soft royal
+  "text-green-300", // earthy mint
+  "text-red-300", // calming coral
+  "text-blue-300", // airy ocean blue
+  "text-fuchsia-300", // vibrant pink-purple
+  "text-zinc-200", // soft gray for balance
+  "text-neutral-300", // gentle gray-beige
+  "text-stone-300", // warm muted tone
+];
 export const SingleProject = ({ project }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   return (
@@ -53,8 +75,12 @@ export const SingleProject = ({ project }) => {
 
       {/* Right content block */}
       <div className="bg-white rounded-xl shadow-md p-8 relative border border-gray-100 w-full md:w-1/2 h-full">
-        <h3 className="text-2xl font-bold text-yellow-500 mb-4">
-          {project.name}
+        <h3
+          className={`text-2xl font-bold ${
+            textColors[project.id % textColors.length]
+          } mb-4`}
+        >
+          <Link to={project.link}>{project.name}</Link>
         </h3>
         <p className="text-gray-600 leading-relaxed mb-6">
           {project.description}

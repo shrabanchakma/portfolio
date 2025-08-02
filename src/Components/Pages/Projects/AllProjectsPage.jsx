@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import projects from "../../../../public/Projects.json";
 import { SingleProject } from "./SingleProject";
 
@@ -9,7 +9,9 @@ export const AllProjectsPage = () => {
     filterType === "All"
       ? projects
       : projects.filter((project) => project.type === filterType);
-
+  useEffect(() => {
+    document.title = "Projects";
+  }, []);
   return (
     <div className="pattern_bg">
       <div className="max-w-5xl mx-auto px-4 py-20 pattern_bg">
