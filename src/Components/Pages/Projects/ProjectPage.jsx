@@ -92,13 +92,13 @@ export const ProjectPage = () => {
         return (
           <section
             key={idx}
-            className={`max-w-6xl mx-auto px-4 mb-20 grid grid-cols-1 md:grid-cols-5 gap-10 items-center`}
+            className={`max-w-6xl mx-auto px-4 mb-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center`}
           >
             {!isEven ? (
               // Reversed: Text on left, image on right
               <>
-                <div className="md:col-span-3">
-                  <h2 className="text-2xl font-bold text-neutral mb-4">
+                <div className="md:col-span-1">
+                  <h2 className="text-2xl font-bold text-[#001d3d] mb-4">
                     {section.title}
                   </h2>
                   <ul className="list-disc text-gray-700 pl-5 space-y-2 text-sm">
@@ -108,7 +108,7 @@ export const ProjectPage = () => {
                   </ul>
                 </div>
                 <div
-                  className="md:col-span-2"
+                  className="md:col-span-1"
                   onClick={() => setOpenLightBox(idx)}
                 >
                   <img
@@ -122,7 +122,7 @@ export const ProjectPage = () => {
               // Default: Image on left, text on right
               <>
                 <div
-                  className="md:col-span-2"
+                  className="md:col-span-1"
                   onClick={() => setOpenLightBox(idx)}
                 >
                   <img
@@ -131,8 +131,8 @@ export const ProjectPage = () => {
                     className="rounded-xl shadow-md cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out"
                   />
                 </div>
-                <div className="md:col-span-3">
-                  <h2 className="text-2xl font-bold text-neutral mb-4">
+                <div className="md:col-span-1">
+                  <h2 className="text-2xl font-bold text-[#001d3d] mb-4">
                     {section.title}
                   </h2>
                   <ul className="list-disc text-gray-700 pl-5 space-y-2 text-sm">

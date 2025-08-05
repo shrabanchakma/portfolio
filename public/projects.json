@@ -1,39 +1,44 @@
 [
   {
     "id": 1,
-    "name": "Facebook Conversion API Setup",
+    "name": "Boosting Ecommerce ROI with Accurate Facebook Conversion API Tracking",
     "type": "Web Analytics",
     "image": "https://i.ibb.co/1fkyvpTM/project-test.png",
-    "description": "Implemented Facebook Conversion API (CAPI) with both browser-side and server-side tracking on WordPress and Shopify. Ensured event deduplication, improved attribution accuracy, and optimized data flow for better ad performance.",
+    "description": "Implemented a high-quality Facebook Conversion API setup for a clothing brand’s ecommerce store, combining browser-side and server-side tracking to maximize data accuracy, reduce wasted ad spend, and help Facebook optimize campaigns for lower costs and higher returns.",
     "link": "/projects/1",
     "meta": {
-      "tools": ["Facebook CAPI", "GTM Server", "Shopify", "WordPress"],
-      "outcome": [
-        "+30% higher event match rate",
-        "+25% ROAS lift",
-        "Reduced tracking inconsistencies by 85%"
+      "tools": [
+        "Google Tag Manager",
+        "Google Analytics 4",
+        "Stape.io (Server)"
       ],
-      "industry": "Ecommerce – Beauty & Wellness"
+      "outcome": [
+        "8+/10 Event Match Quality",
+        "Deduplicated Events",
+        "Browser + Server Integration",
+        "10+ Ecommerce Events Tracked"
+      ],
+      "industry": "Ecommerce – Clothing Brand"
     },
     "sections": [
       {
-        "title": "Server-Side Tracking with GTM Server + Meta Pixel",
+        "title": "Server-Side Tracking with GTM Server + Stape.io",
         "image": "https://i.ibb.co/1fkyvpTM/project-test.png",
         "bullets": [
-          "Built a GTM Server container hosted via Google Cloud for robust reliability",
-          "Configured Meta Pixel events with deduplication logic using `event_id` for browser + server sync",
-          "Created custom triggers to fire purchase, view content, and add-to-cart across both WordPress and Shopify",
-          "Verified event delivery using Meta Events Manager — saw immediate jump in matching precision"
+          "Used Stape.io as a dedicated tagging server for fast, privacy-compliant, and reliable tracking.",
+          "Set up parallel tracking (browser + server) to ensure Facebook always receives events even when browser cookies are blocked.",
+          "Optimized tagging flow to reduce data loss, leading to more reliable event tracking and better ad targeting.",
+          "Configured 4+ essential standard Facebook events (Purchase, Initiate Checkout, Add to Cart, View Content) with enhanced parameters for stronger remarketing signals."
         ]
       },
       {
-        "title": "Browser-Server Signal Blending for Accurate Attribution",
-        "image": "https://i.ibb.co.com/0yg2vnfr/Web-Analytics-Course-Certificate.jpg",
+        "title": "Maximizing Event Match Quality for Lower Costs",
+        "image": "https://i.ibb.co/0yg2vnfr/Web-Analytics-Course-Certificate.jpg",
         "bullets": [
-          "Integrated browser-side GTM tags with Shopify checkout and WooCommerce forms",
-          "Used fallback logic to fire server-only events when browser fails due to ad blockers",
-          "Blended client & server events to feed Meta with complete visibility on user actions",
-          "Enabled advanced remarketing by preserving tracking across redirects and slow-loading pages"
+          "Achieved 8+/10 Event Match Quality, rated excellent by Facebook, helping the algorithm make smarter bidding decisions.",
+          "Implemented deduplication between server and browser events, avoiding double-counting and wasted budget.",
+          "Sent 10+ key ecommerce event parameters (email, phone, zip, currency, product IDs) with proper hashing for privacy and data accuracy.",
+          "Sent 10+ key ecommerce event parameters (email, phone, zip, currency, product IDs) with proper hashing for privacy and data accuracy."
         ]
       }
     ]

@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { Bounce } from "react-awesome-reveal";
 import { HashLink } from "react-router-hash-link";
 import { ReactTyped } from "react-typed";
 const HeroSection = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
   return (
     <section
       id="home"
@@ -38,10 +40,14 @@ const HeroSection = () => {
         {/* Visual Content */}
         <div className="md:w-1/2 w-full">
           <div className="w-full h-64 sm:h-72 md:h-80 lg:h-96 rounded-4xl outline outline-[#003566] overflow-hidden shadow-lg ">
+            {!isLoaded && <div className="skeleton w-full h-full" />}
             <img
-              src="../../../../public/facebook cookie consent.png" // Replace with your actual image path
+              src="https://i.ibb.co.com/QjTyskbL/facebook-cookie-consent.png" // Replace with your actual image path
               alt="Dashboard collage"
-              className="w-full h-full object-cover"
+              className={`w-full h-full object-cover ${
+                isLoaded ? "opacity-100" : "opacity-0"
+              }`}
+              onLoad={() => setIsLoaded(true)}
             />
           </div>
         </div>
