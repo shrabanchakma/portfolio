@@ -74,7 +74,7 @@ export const ProjectPage = () => {
         <div className=" py-6 rounded-lg shadow-md">
           <p className="text-lg font-bold text-[#3C65FF]">Outcome</p>
           <p className="font-semibold text-sm text-gray-500">
-            {meta.outcome.join(" - ")}
+            {meta.outcome.join(" | ")}
           </p>
         </div>
       </section>

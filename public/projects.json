@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Boosting Ecommerce ROI with Accurate Facebook Conversion API Tracking",
     "type": "Web Analytics",
-    "image": "https://i.ibb.co/1fkyvpTM/project-test.png",
+    "image": "https://i.ibb.co.com/FL4qY8Yf/1.png",
     "description": "Implemented a high-quality Facebook Conversion API setup for a clothing brand’s ecommerce store, combining browser-side and server-side tracking to maximize data accuracy, reduce wasted ad spend, and help Facebook optimize campaigns for lower costs and higher returns.",
     "link": "/projects/1",
     "meta": {
@@ -23,7 +23,7 @@
     "sections": [
       {
         "title": "Server-Side Tracking with GTM Server + Stape.io",
-        "image": "https://i.ibb.co/1fkyvpTM/project-test.png",
+        "image": "https://i.ibb.co.com/k2S3sbgk/2.png",
         "bullets": [
           "Used Stape.io as a dedicated tagging server for fast, privacy-compliant, and reliable tracking.",
           "Set up parallel tracking (browser + server) to ensure Facebook always receives events even when browser cookies are blocked.",
@@ -33,7 +33,7 @@
       },
       {
         "title": "Maximizing Event Match Quality for Lower Costs",
-        "image": "https://i.ibb.co/0yg2vnfr/Web-Analytics-Course-Certificate.jpg",
+        "image": "https://i.ibb.co.com/SwxXqcGz/3.png",
         "bullets": [
           "Achieved 8+/10 Event Match Quality, rated excellent by Facebook, helping the algorithm make smarter bidding decisions.",
           "Implemented deduplication between server and browser events, avoiding double-counting and wasted budget.",
